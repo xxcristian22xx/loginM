@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div id="container">
+    <ion-title>
+      LOGIN
+    </ion-title>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div  id="container">
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input [(ngModel)]="correo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="secondary" position="floating">Contraseña</ion-label>
+      <ion-input [(ngModel)]="contrasena"></ion-input>
+     </ion-item>
+      <ion-button expand="block" (click)="loguearse()">Login</ion-button>
+      <ion-button expand="block" (click)="loguearseGoogle()">Login con google</ion-button>
+      <ion-button expand="block" (click)="loguearseMicrosoft()">Login con Microsoft</ion-button>
+      <ion-button [routerLink]="['/registro']">registrarse</ion-button>
+
+      
+
+    
+      <!-- <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>{{person.gender}}</ion-card-subtitle>
+        <ion-card-title>{{person.name}}</ion-card-title>
+        <img src="{{person.image}}">
+        <ion-label>{{person.species}}</ion-label>
+      </ion-card-header>
+    </ion-card> -->
+      <!-- <span></span> -->
+      
+    </div>
+</ion-content>

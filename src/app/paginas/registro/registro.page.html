@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="registrarse()" [formGroup] ="form"  >
+  <ion-item>
+    <ion-label position="floating">Correo</ion-label>
+    <ion-input formControlName="correo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="secondary" position="floating">Contraseña</ion-label>
+    <ion-input formControlName="contrasena"></ion-input>
+   </ion-item>
+   <ion-item>
+    <ion-label color="secondary" position="floating">Telefono</ion-label>
+    <ion-input formControlName ="telefono"></ion-input>
+   </ion-item>
+   <ion-item>
+    <ion-label color="secondary" position="floating">Fecha nacimiento</ion-label>
+    <ion-input formControlName ="fechaNacimiento"></ion-input>
+   </ion-item>
+   <ion-item>
+    <ion-label color="secondary" position="floating">Nombre Completo</ion-label>
+    <ion-input formControlName ="nombreCompleto"></ion-input>
+   </ion-item>
+    <ion-button expand="block" type = "submit" >Login</ion-button>
+  </form>
+  <ion-button [routerLink]="['/home']">¿ya esta registrado?</ion-button>
+</ion-content>

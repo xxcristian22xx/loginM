@@ -1,0 +1,7 @@
+{
+  "name": "MiprimeraApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
